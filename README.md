@@ -10,4 +10,4 @@ the command pallete and use one of the 5 currently available commands while edit
 
 You will have to have Ionic previously installed to use this extension.
 
-** Enjoy!**
+** WARNING: this is still alpha**
