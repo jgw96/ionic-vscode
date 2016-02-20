@@ -1,0 +1,53 @@
+{
+	"name": "ionic-vscode",
+	"displayName": "ionic-vscode",
+	"description": "ionic vscode extension",
+	"version": "0.0.1",
+	"publisher": "justinwillis",
+	"engines": {
+		"vscode": "^0.10.6"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+        "onCommand:extension.ionicServe",
+        "onCommand:extension.ionicRunAndroid",
+        "onCommand:extension.ionicEmulateAndroid",
+        "onCommand:extension.ionicRunIos",
+        "onCommand:extension.ionicEmulateIos"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+        {
+            "command": "extension.ionicServe",
+            "title": "Ionic Serve"
+        },
+        {
+            "command": "extension.ionicRunAndroid",
+            "title": "Ionic Run Android"
+        },
+        {
+            "command": "extension.ionicEmulateAndroid",
+            "title": "Ionic Emulate Android"
+        },
+        {
+            "command": "extension.ionicRunIos",
+            "title": "Ionic Run Ios"
+        },
+        {            
+            "command": "extension.ionicEmulateIos",
+            "title": "Ionic Emulate Ios"
+        }]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^1.7.5",
+		"vscode": "^0.11.0"
+	}
+}
