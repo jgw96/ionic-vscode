@@ -10,59 +10,29 @@ import {exec} from "child_process";
 export function activate(context: vscode.ExtensionContext): void {
 
     const commands = new CommandsGenerator().commands[0];
+    const commandGen = new CommandsGenerator();
 
     console.log('Congratulations, ionic-vscode is now active!');
 
 
     let ionic_serve = vscode.commands.registerCommand("extension.ionicServe", () => {
-        vscode.window.showInformationMessage("Currently running: ionic serve");
-        exec(commands.ionic_serve, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
-            if (error) {
-                vscode.window.showInformationMessage(error.toString());
-                console.log(error);
-            }
-        });
-
+        commandGen.runCommand("Currently running: ionic serve", commands.ionic_serve);
     });
 
     let ionic_run_android = vscode.commands.registerCommand("extension.ionicRunAndroid", () => {
-        vscode.window.showInformationMessage("Currently running: ionic run android");
-        exec(commands.ionic_run_android, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
-            if (error) {
-                vscode.window.showInformationMessage(error.toString());
-            }
-        });
-
+        commandGen.runCommand("CurrentlyRunning: ionic run android", commands.ionic_run_android);
     });
 
     let ionic_emulate_android = vscode.commands.registerCommand("extension.ionicEmulateAndroid", () => {
-        vscode.window.showInformationMessage("Currently running: ionic emulate android");
-        exec(commands.ionic_emulate_android, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
-            if (error) {
-                vscode.window.showInformationMessage(error.toString());
-            }
-        });
-
+        commandGen.runCommand("CurrentlyRunning: ionic emulate android", commands.ionic_emulate_android);
     });
 
     let ionic_run_ios = vscode.commands.registerCommand("extension.ionicRunIos", () => {
-        vscode.window.showInformationMessage("Currently running: ionic run ios");
-        exec(commands.ionic_run_ios, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
-            if (error) {
-                vscode.window.showInformationMessage(error.toString());
-            }
-        });
-
+        commandGen.runCommand("CurrentlyRunning: ionic run ios", commands.ionic_run_ios);
     });
 
     let ionic_emulate_ios = vscode.commands.registerCommand("extension.ionicEmulateIos", () => {
-        vscode.window.showInformationMessage("Currently running: ionic emulate ios");
-        exec(commands.ionic_emulate_ios, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
-            if (error) {
-                vscode.window.showInformationMessage(error.toString());
-            }
-        });
-
+        commandGen.runCommand("CurrentlyRunning: ionic emulate ios", commands.ionic_emulate_ios);
     });
 
 
