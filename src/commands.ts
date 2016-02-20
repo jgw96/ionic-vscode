@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 
 export class CommandsGenerator {
 
-    commands: any[];
+    commands: Object[];
 
     constructor() {
         this.commands = [{
@@ -15,9 +15,9 @@ export class CommandsGenerator {
         }]
     }
 
-    runCommand(message: string, command: any) {
+    public runCommand(message: string, command: any) {
         vscode.window.showInformationMessage(message);
-        exec(command, { cwd: vscode.workspace.rootPath }, (error, stdout, stderr) => {
+        exec(command, { cwd: vscode.workspace.rootPath }, (error: Error, stdout: Buffer, stderr: Buffer) => {
             if (error) {
                 vscode.window.showInformationMessage(error.toString());
                 console.log(error);
