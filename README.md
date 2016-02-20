@@ -1,13 +1,13 @@
-# README
-## This is the README for your extension "ionic-vscode" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# Ionic-vscode
+Ionic-vscode is a simple Visual Studio Code extension to help in the development of Ionic 1.x and 2.x apps! To use simply open
+the command pallete and use one of the 5 currently available commands while editing your Ionic app:
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+* Ionic Serve
+* Ionic Emulate Android
+* Ionic Run Android
+* Ionic Emulate Ios
+* Ionic Run Ios
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+You will have to have Ionic previously installed to use this extension.
 
 ** Enjoy!**
