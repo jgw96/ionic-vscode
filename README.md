@@ -12,6 +12,8 @@ Also this extension now comes with over 200 ionic 1 snippets with ionic 2 ones t
 
 You will have to have Ionic previously installed to use this extension.
 
+See the [docs](snippetdoc) for all of the snippets.
+
 BIG thanks to https://github.com/digitaldrummerj for the snippets! Go check out his Ionic 1 snippets extension at https://marketplace.visualstudio.com/items?itemName=justinjames.ionic1-snippets
 
 ** WARNING: this is still alpha**

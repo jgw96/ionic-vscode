@@ -1,81 +1,85 @@
 {
-	"name": "ionic-vscode",
-	"displayName": "ionic-vscode",
-	"description": "ionic vscode extension",
-	"version": "0.0.1",
-	"publisher": "justinwillis",
-	"engines": {
-		"vscode": "^0.10.6"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
+    "name": "ionic-vscode",
+    "displayName": "ionic-vscode",
+    "description": "ionic vscode extension",
+    "version": "0.0.1",
+    "publisher": "justinwillis",
+    "engines": {
+        "vscode": "^0.10.6"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
         "onCommand:extension.ionicServe",
         "onCommand:extension.ionicRunAndroid",
         "onCommand:extension.ionicEmulateAndroid",
         "onCommand:extension.ionicRunIos",
         "onCommand:extension.ionicEmulateIos"
-	],
-	"main": "./out/src/extension",
-	"contributes": {
-		"commands": [
-        {
-            "command": "extension.ionicServe",
-            "title": "Ionic Serve"
-        },
-        {
-            "command": "extension.ionicRunAndroid",
-            "title": "Ionic Run Android"
-        },
-        {
-            "command": "extension.ionicEmulateAndroid",
-            "title": "Ionic Emulate Android"
-        },
-        {
-            "command": "extension.ionicRunIos",
-            "title": "Ionic Run Ios"
-        },
-        {            
-            "command": "extension.ionicEmulateIos",
-            "title": "Ionic Emulate Ios"
-        }],
-        
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.ionicServe",
+                "title": "Ionic Serve"
+            },
+            {
+                "command": "extension.ionicRunAndroid",
+                "title": "Ionic Run Android"
+            },
+            {
+                "command": "extension.ionicEmulateAndroid",
+                "title": "Ionic Emulate Android"
+            },
+            {
+                "command": "extension.ionicRunIos",
+                "title": "Ionic Run Ios"
+            },
+            {
+                "command": "extension.ionicEmulateIos",
+                "title": "Ionic Emulate Ios"
+            }
+        ],
         "snippets": [
-			{
-				"language": "javascript",
-				"path": "./snippets/javascript.json"
-			}
-			,
-			{
-				"language": "javascript",
-				"path": "./snippets/icons-name.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/icons-name.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/icons-html.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.json"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/ng-ionic.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install"
-	},
-	"devDependencies": {
-		"typescript": "^1.7.5",
-		"vscode": "^0.11.0"
-	}
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/icons-name.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/icons-name.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/icons-html.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/ng-ionic.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "buildicons": "grunt build"
+    },
+    "devDependencies": {
+        "typescript": "^1.7.5",
+        "vscode": "^0.11.0",
+        "grunt": "^0.4.5",
+        "grunt-shell": "^1.1.2",
+        "load-grunt-tasks": "^3.4.0",
+        "request": "^2.51.0"
+    }
 }
