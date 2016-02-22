@@ -46,20 +46,20 @@ module.exports = function (grunt) {
 
                 json.icons.forEach(function (value) {
                     nameicons.push('\t"ionicIcon' + value.name.replace(/-/g, '') + '": {');
-                    nameicons.push('\t\t"prefix": "' + 'ionicIcon' + value.name.replace(/-/g, '') + '",');
+                    nameicons.push('\t\t"prefix": "' + 'ionic2Icon' + value.name.replace(/-/g, '') + '",');
                     nameicons.push('\t\t"body": ' + '"\\"' + json.prefix + value.name + ' icon\\";$0",');
                     nameicons.push('\t\t"description": "",');
                     nameicons.push('\t\t"scope": ""');
                     nameicons.push('\t},');
 
                     htmlicons.push('\t"ionicIcon' + value.name.replace(/-/g, '') + '": {');
-                    htmlicons.push('\t\t"prefix": "' + 'ionicIcon' + value.name.replace(/-/g, '') + '",');
+                    htmlicons.push('\t\t"prefix": "' + 'ionic2Icon' + value.name.replace(/-/g, '') + '",');
                     htmlicons.push('\t\t"body": ' + '"<i class=\\"' + json.prefix + value.name + ' icon\\"></i>$0",');
                     htmlicons.push('\t\t"description": "",');
                     htmlicons.push('\t\t"scope": ""');
                     htmlicons.push('\t},');
             
-                    iconReadme.push('| ' + value.name + Array(36 - value.name.length).join(" ") + '| ' + value.name.replace(/-/g, '') + Array(41 - (value.name.replace(/-/g, '')).length).join(" ") + '|');
+                    iconReadme.push('| ' + value.name + Array(36 - value.name.length).join(" ") + '| ionic2Icon' + value.name.replace(/-/g, '') + Array(41 - (value.name.replace(/-/g, '')).length).join(" ") + '|');
                 });
 
                 var htmlIconsContent = htmlicons.join('\n');
