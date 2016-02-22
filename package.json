@@ -39,7 +39,35 @@
         {            
             "command": "extension.ionicEmulateIos",
             "title": "Ionic Emulate Ios"
-        }]
+        }],
+        
+        "snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+			,
+			{
+				"language": "javascript",
+				"path": "./snippets/icons-name.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/icons-name.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/icons-html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/ng-ionic.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",

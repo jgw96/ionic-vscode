@@ -15,23 +15,23 @@ export function activate(context: vscode.ExtensionContext): void {
 
 
     let ionic_serve = vscode.commands.registerCommand("extension.ionicServe", (): void => {
-        commandGen.runCommand("Currently running: ionic serve", commands.ionic_serve);
+        commandGen.runCommand("Currently Running: ionic serve", commands.ionic_serve);
     });
 
     let ionic_run_android = vscode.commands.registerCommand("extension.ionicRunAndroid", (): void => {
-        commandGen.runCommand("CurrentlyRunning: ionic run android", commands.ionic_run_android);
+        commandGen.runCommand("Currently Running: ionic run android", commands.ionic_run_android);
     });
 
     let ionic_emulate_android = vscode.commands.registerCommand("extension.ionicEmulateAndroid", (): void => {
-        commandGen.runCommand("CurrentlyRunning: ionic emulate android", commands.ionic_emulate_android);
+        commandGen.runCommand("Currently Running: ionic emulate android", commands.ionic_emulate_android);
     });
 
     let ionic_run_ios = vscode.commands.registerCommand("extension.ionicRunIos", (): void => {
-        commandGen.runCommand("CurrentlyRunning: ionic run ios", commands.ionic_run_ios);
+        commandGen.runCommand("Currently Running: ionic run ios", commands.ionic_run_ios);
     });
 
     let ionic_emulate_ios = vscode.commands.registerCommand("extension.ionicEmulateIos", (): void => {
-        commandGen.runCommand("CurrentlyRunning: ionic emulate ios", commands.ionic_emulate_ios);
+        commandGen.runCommand("Currently Running: ionic emulate ios", commands.ionic_emulate_ios);
     });
 
 
