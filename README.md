@@ -8,6 +8,9 @@ the command pallete and use one of the 5 currently available commands while edit
 * Ionic Emulate Ios
 * Ionic Run Ios
 
+
+be sure to clone this extension and run npm install first before installing this extension.
+
 Also this extension now comes with over 200 ionic 1 snippets with ionic 2 ones to come!
 
 You will have to have Ionic previously installed to use this extension.
