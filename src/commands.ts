@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 
 export class CommandsGenerator {
 
-    commands: Object[];
+    commands: any[];
 
     constructor() {
         this.commands = [{
