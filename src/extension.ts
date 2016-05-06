@@ -33,12 +33,17 @@ export function activate(context: vscode.ExtensionContext): void {
         commandGen.runCommand("Currently Running: ionic emulate ios", commands.ionic_emulate_ios);
     });
 
+    const ionic_generate = vscode.commands.registerCommand("extension.ionicGenerate", (): void => {
+        commandGen.runCommand("Currently Running: ionic generate", commands.ionic_generate);
+    });
+
 
     context.subscriptions.push(ionic_serve);
     context.subscriptions.push(ionic_run_android);
     context.subscriptions.push(ionic_emulate_android);
     context.subscriptions.push(ionic_run_ios);
     context.subscriptions.push(ionic_emulate_ios);
+    context.subscriptions.push(ionic_generate);
 }
 
 // this method is called when your extension is deactivated

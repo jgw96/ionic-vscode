@@ -15,7 +15,8 @@
         "onCommand:extension.ionicRunAndroid",
         "onCommand:extension.ionicEmulateAndroid",
         "onCommand:extension.ionicRunIos",
-        "onCommand:extension.ionicEmulateIos"
+        "onCommand:extension.ionicEmulateIos",
+        "onCommand:extension.ionicGenerate"
     ],
     "main": "./out/src/extension",
     "contributes": {
@@ -39,6 +40,10 @@
             {
                 "command": "extension.ionicEmulateIos",
                 "title": "Ionic Emulate Ios"
+            },
+            {
+                "command": "extension.ionicGenerate",
+                "title": "Ionic Generate"
             }
         ]
     },
