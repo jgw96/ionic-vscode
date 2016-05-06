@@ -35,7 +35,6 @@ export class CommandsGenerator {
                     prompt: `What would you like to name your ${generate}?`,
                     value: `My${generate}`
                 }).then((name: string) => {
-                    console.log(name);
                     vscode.window.showInformationMessage(message);
                     exec(`ionic generate ${generate} ${name}`, { cwd: vscode.workspace.rootPath }, (error: Error, stdout: string, stderr: string) => {
                         if (error) {

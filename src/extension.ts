@@ -11,8 +11,6 @@ export function activate(context: vscode.ExtensionContext): void {
     const commands = new CommandsGenerator().commands[0];
     const commandGen = new CommandsGenerator();
 
-    console.log('Congratulations, ionic-vscode is now active!');
-
     const ionic_serve = vscode.commands.registerCommand("extension.ionicServe", (): void => {
         commandGen.runCommand("Currently Running: ionic serve", commands.ionic_serve);
     });
