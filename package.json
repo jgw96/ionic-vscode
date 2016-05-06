@@ -1,9 +1,9 @@
 {
     "name": "ionic-vscode",
     "displayName": "ionic-vscode",
-    "description": "ionic vscode extension! Run ionic-cli commands straight from vscode!",
+    "description": "Ionic vscode extension! Run ionic-cli commands straight from vscode! This is meant to be used with Ionic 2, to get the correct ionic-cli for Ionic 2 apps please install ionic@beta with npm install ionic@beta.",
     "version": "1.0.0",
-    "publisher": "justinwillis",
+    "publisher": "justin willis",
     "engines": {
         "vscode": "^0.10.6"
     },
